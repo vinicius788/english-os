@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="utf-8"><meta name="robots" content="noindex"><title>Opening English OS…</title></head>
+  <body>
+    <script>
+      (function () {
+        var base = '/english-os/';
+        var path = window.location.pathname.indexOf(base) === 0
+          ? window.location.pathname.slice(base.length - 1)
+          : '/';
+        var query = window.location.search.slice(1);
+        var hash = window.location.hash.slice(1);
+        var target = base + '?p=' + encodeURIComponent(path)
+          + '&q=' + encodeURIComponent(query)
+          + '&h=' + encodeURIComponent(hash);
+        window.location.replace(target);
+      })();
+    </script>
+    <p>Opening English OS…</p>
+  </body>
+</html>

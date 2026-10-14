@@ -1,0 +1,4500 @@
+{
+  "metadata": {
+    "course_title": "Curso de Inglês Rápido: do Básico à Fluência Sem Enrolação",
+    "source": "User-provided page text, 2026-10-13",
+    "reported_progress": "15 de 569 concluído",
+    "numbered_lessons_count": 545,
+    "tests_count": 24,
+    "caveats": [
+      "O texto não inclui IDs individuais ou URLs diretas das aulas.",
+      "Seções não estão nomeadas de forma explícita no texto.",
+      "O estado de conclusão reflete somente o momento da cópia; verificar as 15 conclusões.",
+      "A plataforma exibe 569 itens, igual à soma de 545 aulas e 24 testes.",
+      "Não constitui sincronização automática com a Udemy."
+    ]
+  },
+  "lessons": [
+    {
+      "lesson_number": 1,
+      "title": "Video Promocional do Curso",
+      "duration_minutes": 1,
+      "udemy_status": "completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 2,
+      "title": "A importância de aprender inglês - Professor Paulo Andrade",
+      "duration_minutes": 5,
+      "udemy_status": "completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 3,
+      "title": "Entendendo o Método",
+      "duration_minutes": 8,
+      "udemy_status": "completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 4,
+      "title": "Organização do Curso e Dicas",
+      "duration_minutes": 4,
+      "udemy_status": "completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 5,
+      "title": "Aprendizado Integrado",
+      "duration_minutes": 5,
+      "udemy_status": "completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 6,
+      "title": "Entendendo o Método - Links Recomendados",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 7,
+      "title": "Onde baixar o material de apoio do curso",
+      "duration_minutes": 1,
+      "udemy_status": "completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 8,
+      "title": "Alphabet",
+      "duration_minutes": 13,
+      "udemy_status": "completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 9,
+      "title": "Alphabet - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 10,
+      "title": "Alphabet - Solução dos Exercícios",
+      "duration_minutes": 15,
+      "udemy_status": "completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 11,
+      "title": "Cardinal Numbers",
+      "duration_minutes": 8,
+      "udemy_status": "completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 12,
+      "title": "Cardinal Numbers - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 13,
+      "title": "Cardinal Numbers - Solução dos Exercicios",
+      "duration_minutes": 10,
+      "udemy_status": "completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 14,
+      "title": "Ordinal Numbers",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 15,
+      "title": "Ordinal Numbers - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 16,
+      "title": "Ordinal Numbers - Solução dos Exercicios",
+      "duration_minutes": 11,
+      "udemy_status": "completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 17,
+      "title": "Grammar Blueprint : Básico",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 18,
+      "title": "Indefinite Article",
+      "duration_minutes": 8,
+      "udemy_status": "completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 19,
+      "title": "Indefinite Article - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 20,
+      "title": "Indefinite Article - Solução dos Exercicios",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 21,
+      "title": "Subject Pronouns",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 22,
+      "title": "Subject Pronouns - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 23,
+      "title": "Verb To Be",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 24,
+      "title": "Subject Pronouns - Solução dos Exercicios",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 25,
+      "title": "Verb To Be and Useful Words",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 26,
+      "title": "Verb To Be and Useful Words - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 27,
+      "title": "Verb To Be and Useful Words - Solução dos Exercicios",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 28,
+      "title": "Demonstrative Pronouns",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 29,
+      "title": "Demonstrative Pronouns - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 30,
+      "title": "Demonstrative Pronouns - Solução dos Exercicios",
+      "duration_minutes": 10,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 31,
+      "title": "Family Members",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 32,
+      "title": "Family Members - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 33,
+      "title": "Family Members - Solução dos Exercicios",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 34,
+      "title": "Greetings, Introductions and Farewell",
+      "duration_minutes": 10,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 35,
+      "title": "Greetings, Introductions and Farewell - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 36,
+      "title": "Greetings, Introductions and Farewell - Solução dos Exercicios",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 37,
+      "title": "A Pronuncia do TH",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 38,
+      "title": "A Pronuncia do TH - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 39,
+      "title": "A Pronuncia do TH - Solução dos Exercicios",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 40,
+      "title": "Definite Article",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 41,
+      "title": "Definite Article - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 42,
+      "title": "Definite Article - Solução dos Exercicios",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 43,
+      "title": "Plural Forms",
+      "duration_minutes": 26,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 44,
+      "title": "Plural Forms - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 45,
+      "title": "Plural Forms - Solução dos Exercicios",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 46,
+      "title": "Simple Present",
+      "duration_minutes": 16,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 47,
+      "title": "Simple Present - Lista de Exercicios",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 48,
+      "title": "Simple Present - Solução dos Exercicios",
+      "duration_minutes": 74,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 49,
+      "title": "Spelling Rules",
+      "duration_minutes": 34,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 50,
+      "title": "Spelling Rules - Solução dos Exercicios",
+      "duration_minutes": 13,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 51,
+      "title": "Prepositions of Place",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 52,
+      "title": "Prepositions of Place - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 53,
+      "title": "Prepositions of Place - Solução dos Exercicios",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 54,
+      "title": "Question Words - 1",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 55,
+      "title": "Question Words - 1 - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 56,
+      "title": "Question Words - 1 - Solução dos Exercicios",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 57,
+      "title": "Describing People",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 58,
+      "title": "Describing People - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 59,
+      "title": "Describing People - Solução dos Exercicios",
+      "duration_minutes": 20,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 60,
+      "title": "Question Words - 2",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 61,
+      "title": "Question Words - 2 - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 62,
+      "title": "Question Words - 2 - Solução dos Exercicios",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 63,
+      "title": "Prepositions Of Time",
+      "duration_minutes": 13,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 64,
+      "title": "Prepositions Of Time - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 65,
+      "title": "Prepositions Of Time - Solução dos Exercicios",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 66,
+      "title": "Answering Hours",
+      "duration_minutes": 13,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 67,
+      "title": "Answering Hours - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 68,
+      "title": "Answering Hours - Solução dos Exercicios",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 69,
+      "title": "Time reference (days of the week, months of the year, seasons)",
+      "duration_minutes": 20,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 70,
+      "title": "Time reference (days of the week, months of the year, seasons) - Lista Ex",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 71,
+      "title": "Time reference (days of the week, months of the year, seasons) - Solução",
+      "duration_minutes": 25,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 72,
+      "title": "Asking And Giving Opinion",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 73,
+      "title": "Asking And Giving Opinion - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 74,
+      "title": "Asking And Giving Opinion - Solução dos Exercicios",
+      "duration_minutes": 13,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 75,
+      "title": "Object Pronouns",
+      "duration_minutes": 10,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 76,
+      "title": "Object Pronouns - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 77,
+      "title": "Object Pronouns - Solução dos Exercicios",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 78,
+      "title": "Possessive Adjectives And Possessive Pronouns",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 79,
+      "title": "Possessive Adjectives And Possessive Pronouns - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 80,
+      "title": "Possessive Adjectives And Possessive Pronouns - Solução dos Exercicios",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 81,
+      "title": "Adverbs Of Frequency",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 82,
+      "title": "Adverbs Of Frequency - Lista de Exercicio",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 83,
+      "title": "Adverbs Of Frequency - Solução dos Exercicios",
+      "duration_minutes": 25,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 84,
+      "title": "Imperatives",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 85,
+      "title": "Imperatives - Lista de Exercicios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 86,
+      "title": "Imperatives - Solução dos Exercicios",
+      "duration_minutes": 10,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 87,
+      "title": "There is - There are",
+      "duration_minutes": 10,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 88,
+      "title": "There is - There are - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 89,
+      "title": "There is - There are - Solução dos Exercícios",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 90,
+      "title": "Intensifiers",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 91,
+      "title": "Intensifiers - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 92,
+      "title": "Intensifiers - Solução dos Exercícios",
+      "duration_minutes": 16,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 93,
+      "title": "Present Continuous",
+      "duration_minutes": 24,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 94,
+      "title": "Present Continuous - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 95,
+      "title": "Present Continuous - Solução dos Exercícios",
+      "duration_minutes": 33,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 96,
+      "title": "Simple Past (Verb To Be)",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 97,
+      "title": "Simple Past (Verb To Be) - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 98,
+      "title": "Simple Past (Verb To Be) - Solução dos Exercícios",
+      "duration_minutes": 22,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 99,
+      "title": "Simple Past",
+      "duration_minutes": 28,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 100,
+      "title": "Simple Past - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 101,
+      "title": "Simple Past - Solução dos Exercícios",
+      "duration_minutes": 41,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 102,
+      "title": "Phrasal Verbs",
+      "duration_minutes": 10,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 103,
+      "title": "Phrasal Verbs - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 104,
+      "title": "Phrasal Verbs - Solução dos Exercícios",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 105,
+      "title": "Time Expressions (Past and Present)",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 106,
+      "title": "Time Expressions (Past and Present) - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 107,
+      "title": "Time Expressions (Past and Present) - Solução dos Exercícios",
+      "duration_minutes": 10,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 108,
+      "title": "There Was and There Were",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 109,
+      "title": "There Was and There Were - Lista de Exercicio",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 110,
+      "title": "There Was and There Were - Solução dos Exercicio",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 111,
+      "title": "Question Words in The Past",
+      "duration_minutes": 18,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 112,
+      "title": "Question Words in The Past - Lista de Exercicio",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 113,
+      "title": "Question Words in The Past - Solução dos Exercicio",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 114,
+      "title": "How Many and How Much",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 115,
+      "title": "How Many and How Much - Lista de Exercicio",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 116,
+      "title": "How Many and How Much - Solução dos Exercicio",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 117,
+      "title": "Expressing Quantity",
+      "duration_minutes": 19,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 118,
+      "title": "Expressing Quantity - Lista de Exercicio",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 119,
+      "title": "Expressing Quantity - Solução dos Exercicio",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 120,
+      "title": "Giving Instructions",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 121,
+      "title": "Giving Instructions - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 122,
+      "title": "Giving Instructions - Solução dos Exercícios",
+      "duration_minutes": 18,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 123,
+      "title": "Asking And Giving Directions",
+      "duration_minutes": 18,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 124,
+      "title": "Asking And Giving Directions - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 125,
+      "title": "Asking And Giving Directions - Solução dos Exercícios",
+      "duration_minutes": 20,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 126,
+      "title": "Because And Because Of",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 127,
+      "title": "Because And Because Of - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 128,
+      "title": "Because And Because Of - Solução dos Exercícios",
+      "duration_minutes": 13,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 129,
+      "title": "Past Continuous",
+      "duration_minutes": 25,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 130,
+      "title": "Past Continuous - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 131,
+      "title": "Past Continuous - Solução dos Exercícios",
+      "duration_minutes": 31,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 132,
+      "title": "Negative Questions",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 133,
+      "title": "Negative Questions - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 134,
+      "title": "Negative Questions - Solução dos Exercícios",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 135,
+      "title": "Possessive Nouns",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 136,
+      "title": "Possessive Nouns - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 137,
+      "title": "Possessive Nouns - Solução dos Exercícios",
+      "duration_minutes": 13,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 138,
+      "title": "O Que Você já é Capaz de Fazer Com o Que Aprendeu Até Agora",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 139,
+      "title": "Flash Cards - Básico",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 140,
+      "title": "Comparative",
+      "duration_minutes": 21,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 141,
+      "title": "Comparative - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 142,
+      "title": "Comparative - Solução dos Exercícios",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 143,
+      "title": "Superlative",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 144,
+      "title": "Superlative - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 145,
+      "title": "Superlative - Solução dos Exercícios",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 146,
+      "title": "Indefinite Pronouns",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 147,
+      "title": "Indefinite Pronouns - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 148,
+      "title": "Indefinite Pronouns - Solução dos Exercícios",
+      "duration_minutes": 13,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 149,
+      "title": "Tag Questions",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 150,
+      "title": "Tag Questions - Lista de Exerícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 151,
+      "title": "Tag Questions - Solução dos Exercícios",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 152,
+      "title": "Modal Verbs",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 153,
+      "title": "Modal Verb Will And To Be Going To",
+      "duration_minutes": 17,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 154,
+      "title": "Modal Verb Will And To Be Going To - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 155,
+      "title": "Modal Verb Will And To Be Going To - Solução dos Exercícios",
+      "duration_minutes": 28,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 156,
+      "title": "While and When",
+      "duration_minutes": 10,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 157,
+      "title": "While and When - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 158,
+      "title": "While and When - Solução dos Exercícios",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 159,
+      "title": "Reflexive Pronouns",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 160,
+      "title": "Reflexive Pronouns - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 161,
+      "title": "Reflexive Pronouns - Solução dos Exercícios",
+      "duration_minutes": 18,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 162,
+      "title": "Modal Verb Can-Could",
+      "duration_minutes": 31,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 163,
+      "title": "Modal Verb Can-Could - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 164,
+      "title": "Modal Verb Can-Could - Solução dos Exercícios",
+      "duration_minutes": 32,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 165,
+      "title": "Used To, Be Used To And Get Used To",
+      "duration_minutes": 24,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 166,
+      "title": "Used To, Be Used To And Get Used To - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 167,
+      "title": "Used To, Be Used To And Get Used To - Solução dos Exercícios",
+      "duration_minutes": 28,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 168,
+      "title": "Time Expressions In Narratives",
+      "duration_minutes": 20,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 169,
+      "title": "Time Expressions In Narratives - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 170,
+      "title": "Time Expressions In Narratives - Solução dos Exercícios",
+      "duration_minutes": 20,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 171,
+      "title": "Verbs To Express Future",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 172,
+      "title": "Verbs To Express Future - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 173,
+      "title": "Verbs To Express Future - Solução dos Exercícios",
+      "duration_minutes": 16,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 174,
+      "title": "Adjectives Order In A Sentence",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 175,
+      "title": "Adjectives Order In A Sentence - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 176,
+      "title": "Adjectives Order In A Sentence - Solução dos Exercícios",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 177,
+      "title": "Asking And Giving Opinion",
+      "duration_minutes": 10,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 178,
+      "title": "Asking And Giving Opinion - Lista de Exercícios",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 179,
+      "title": "Asking And Giving Opinion - Solução dos Exercícios",
+      "duration_minutes": 21,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 180,
+      "title": "Giving Opinion - Subtle and Emphatic Certainty and Doubt",
+      "duration_minutes": 17,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 181,
+      "title": "Giving Opinion - Subtle and Emphatic Certainty and Doubt - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 182,
+      "title": "Giving Opinion - Subtle and Emphatic Certainty and Doubt -Solução dos Exercícios",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 183,
+      "title": "Giving Good And Bad News",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 184,
+      "title": "Giving Good And Bad News - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 185,
+      "title": "Giving Good And Bad News - Solução dos Exercícios",
+      "duration_minutes": 16,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 186,
+      "title": "Modal Verbs May and Might",
+      "duration_minutes": 21,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 187,
+      "title": "Modal Verbs May And Might - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 188,
+      "title": "Modal Verb May and Might - Solução dos Exercícios",
+      "duration_minutes": 19,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 189,
+      "title": "Modal Verb Should",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 190,
+      "title": "Modal Verb Should - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 191,
+      "title": "Modal Verb Should - Solução dos Exercícios",
+      "duration_minutes": 26,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 192,
+      "title": "Had Better",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 193,
+      "title": "Had Better - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 194,
+      "title": "Had Better - Solução dos Exercícios",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 195,
+      "title": "Modal Verb Must And Verb Have To",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 196,
+      "title": "Modal Verb Must And Verb Have To - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 197,
+      "title": "Modal Verb Must And Verb Have To - Solução dos Exercícios",
+      "duration_minutes": 20,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 198,
+      "title": "Fillers",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 199,
+      "title": "Fillers - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 200,
+      "title": "Fillers - Solução da Lista de Exercícios",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 201,
+      "title": "Verbs Followed By Either Gerund Or Infinitive",
+      "duration_minutes": 29,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 202,
+      "title": "Verbs Followed By Either Gerund Or Infinitive - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 203,
+      "title": "Verbs Followed By Either Gerund Or Infinitive - Solução dos exercícios",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "solution",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 204,
+      "title": "Connectors",
+      "duration_minutes": 29,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 205,
+      "title": "Connectors - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 206,
+      "title": "Connectors - Solução da Lista de Exercícios",
+      "duration_minutes": 19,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 207,
+      "title": "Modal Verb Would",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 208,
+      "title": "Modal Verb Would - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 209,
+      "title": "Modal Verb Would - Solução da Lista de Exercícios",
+      "duration_minutes": 23,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 210,
+      "title": "Would Rather",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 211,
+      "title": "Would Rather - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 212,
+      "title": "Would Rather - Solução da Lista de Exercícios",
+      "duration_minutes": 24,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 213,
+      "title": "Would You Mind-Would You Mind If",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 214,
+      "title": "Would You Mind-Would You Mind If - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 215,
+      "title": "Would You Mind-Would You Mind If - Solução da Lista de Exercícios",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 216,
+      "title": "Modal Verb Shall",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 217,
+      "title": "Modal Verb Shall - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 218,
+      "title": "Modal Verb Shall - Solução da Lista de Exercícios",
+      "duration_minutes": 22,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 219,
+      "title": "Modal Verb Ought To",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 220,
+      "title": "Modal Verb Ought To - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 221,
+      "title": "Modal Verb Ought To - Solução da Lista de Exercícios",
+      "duration_minutes": 23,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 222,
+      "title": "Vocabulary Related To Products And Services 1",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 223,
+      "title": "Vocabulary Related To Products And Services 1 - Lista de Exercícios",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 224,
+      "title": "Vocabulary Related To Products And Services 1 - Solução da Lista de Exercícios",
+      "duration_minutes": 34,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 225,
+      "title": "Vocabulary Related To Products And Services 2",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 226,
+      "title": "Vocabulary Related To Products And Services 2",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 227,
+      "title": "Vocabulary Related To Products And Services 2",
+      "duration_minutes": 23,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 228,
+      "title": "Be Able To / Be Supposed To / Be Willing To",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 229,
+      "title": "Be Able To / Be Supposed To / Be Willing To - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 230,
+      "title": "Be Able To / Be Supposed To / Be Willing To - Solução da Lista de Exercícios",
+      "duration_minutes": 18,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 231,
+      "title": "Be Accustomed to / Be Used to / Get Used To / Used to",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 232,
+      "title": "Be Accustomed to / Be Used to / Get Used To / Used to - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 233,
+      "title": "Be Accustomed-Used to / Get Used To / Used to - Solução da Lista de Exercícios",
+      "duration_minutes": 25,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 234,
+      "title": "O Que Você já é Capaz de Fazer Com o Que Aprendeu Até Agora - Parte 2",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 235,
+      "title": "Flash Cards - Intermediário",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 236,
+      "title": "Present Perfect",
+      "duration_minutes": 19,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 237,
+      "title": "Present Perfect - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 238,
+      "title": "Present Perfect - Solução da Lista de Exercícios",
+      "duration_minutes": 27,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 239,
+      "title": "Present Perfect With Since And For",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 240,
+      "title": "A02-Present Perfect With Since And For - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 241,
+      "title": "A02-Present Perfect With Since And For - Solução da Lista de Exercícios",
+      "duration_minutes": 16,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 242,
+      "title": "Present Perfect And Adverbs of Time",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 243,
+      "title": "Present Perfect And Adverbs of Time - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 244,
+      "title": "Present Perfect And Adverbs of Time - Solução da Lista de Exercícios",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 245,
+      "title": "Present Perfect Continuous",
+      "duration_minutes": 16,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 246,
+      "title": "Present Perfect Continuous - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 247,
+      "title": "Present Perfect Continuous - Solução da Lista de Exercícios",
+      "duration_minutes": 24,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 248,
+      "title": "Relative Pronouns Who/That/Which/Whose/Where/Whom/When",
+      "duration_minutes": 21,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 249,
+      "title": "Relative Pronouns Who/That/Which/Whose/Where/Whom/When - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 250,
+      "title": "Relative Pronouns Who/That/Which/Whose/Where/Whom/Whent - Sol da Lista de Exerc.",
+      "duration_minutes": 28,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 251,
+      "title": "Future Continuous",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 252,
+      "title": "Future Continuous - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 253,
+      "title": "Future Continuous - Solução da Lista de Exercícios",
+      "duration_minutes": 25,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 254,
+      "title": "Paired Conjunctions",
+      "duration_minutes": 19,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 255,
+      "title": "Paired Conjunctions - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 256,
+      "title": "Paired Conjunctions - Solução da Lista de Exercícios",
+      "duration_minutes": 13,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 257,
+      "title": "Modal Verbs + Perfect Infinitive",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 258,
+      "title": "Modal Verbs + Perfect Infinitive - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 259,
+      "title": "Modal Verbs + Perfect Infinitive - Solução da Lista de Exercícios",
+      "duration_minutes": 18,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 260,
+      "title": "Past Perfect",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 261,
+      "title": "Past Perfect - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 262,
+      "title": "Past Perfect - Solução da Lista de Exercícios",
+      "duration_minutes": 28,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 263,
+      "title": "Past Perfect Continuous",
+      "duration_minutes": 14,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 264,
+      "title": "Past Perfect Continuous - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 265,
+      "title": "Past Perfect Continuous - Solução da Lista de Exercícios",
+      "duration_minutes": 31,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 266,
+      "title": "Future Perfect",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 267,
+      "title": "Future Perfect - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 268,
+      "title": "Future Perfect - Solução da Lista de Exercícios",
+      "duration_minutes": 30,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 269,
+      "title": "Future Perfect Continuous",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 270,
+      "title": "Future Perfect Continuous - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 271,
+      "title": "Future Perfect Continuous - Solução da Lista de Exercícios",
+      "duration_minutes": 32,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 272,
+      "title": "Conditionals",
+      "duration_minutes": 25,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 273,
+      "title": "Conditionals - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 274,
+      "title": "Conditionals - Solução da Lista de Exercícios",
+      "duration_minutes": 24,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 275,
+      "title": "Passive Voice",
+      "duration_minutes": 37,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 276,
+      "title": "Passive Voice - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 277,
+      "title": "Passive Voice - Solução da Lista de Exercícios",
+      "duration_minutes": 27,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 278,
+      "title": "Reported Speech",
+      "duration_minutes": 17,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 279,
+      "title": "Reported Speech - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 280,
+      "title": "Reported Speech - Solução da Lista de Exercícios",
+      "duration_minutes": 13,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 281,
+      "title": "Reporting Questions",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 282,
+      "title": "Reporting Questions - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 283,
+      "title": "Reporting Questions - Solução da Lista de Exercícios",
+      "duration_minutes": 17,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 284,
+      "title": "Place And Time Reference In Reported Speech",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 285,
+      "title": "Place And Time Reference In Reported Speech",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 286,
+      "title": "Place And Time Reference In Reported Speech - Solução da Lista de Exercícios",
+      "duration_minutes": 13,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 287,
+      "title": "Flash Cards - Avançado",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 288,
+      "title": "Conclusão Do Curso",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 289,
+      "title": "Introduçao Às Pílulas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 290,
+      "title": "Too, Also and Either",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 291,
+      "title": "If x Whether",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 292,
+      "title": "Ain't",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 293,
+      "title": "Question Words (No Auxiliary Verbs)",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 294,
+      "title": "Question Words - Lista de Exercícios",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 295,
+      "title": "Question Words (No Auxiliary Verbs) - Solução da Lista de Exercícios",
+      "duration_minutes": 15,
+      "udemy_status": "not_completed",
+      "type": "exercise",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 296,
+      "title": "Prepositions of Place and Movement",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 297,
+      "title": "Some Differences Between American and British Vocabulary",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 298,
+      "title": "The Difference Between A/An and One",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 299,
+      "title": "The Difference Between No and Not",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 300,
+      "title": "The Difference Between Big and Large",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 301,
+      "title": "Collocations",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 302,
+      "title": "O Processo Explicado Visualmente",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 303,
+      "title": "Como Praticar a Pronúncia do Inglês",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 304,
+      "title": "Halloween - Inglês Americano",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 305,
+      "title": "Halloween - Inglês Britânico",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 306,
+      "title": "Halloween - Texto Original e Tradução",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 307,
+      "title": "Halloween - Inglês Americano - Legendado",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 308,
+      "title": "Halloween - Inglês Britânico - Legendado",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 309,
+      "title": "Prática com vozes de outros países - Halloween",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 310,
+      "title": "Halloween - Sotaque do Quenia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 311,
+      "title": "Halloween - Sotaque da Tanzânia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 312,
+      "title": "Halloween - Sotaque das Filipinas",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 313,
+      "title": "Halloween - Sotaque da Índia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 314,
+      "title": "Hora de praticar sua pronúncia!",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 315,
+      "title": "Summer Vacation - Inglês Americano",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 316,
+      "title": "Summer Vacation - Inglês Britânico",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 317,
+      "title": "Summer Vacation - Texto Original e Tradução",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 318,
+      "title": "Summer Vacation - Inglês Americano - Legendado",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 319,
+      "title": "Summer Vacation - Inglês Britânico - Legendado",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 320,
+      "title": "Prática com vozes de outros países",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 321,
+      "title": "Summer Vacation - Sotaque do Quênia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 322,
+      "title": "Summer Vacation - Sotaque da Tanzânia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 323,
+      "title": "Summer Vacation - Sotaque das Filipinas",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 324,
+      "title": "Summer Vacation - Sotaque da Índia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 325,
+      "title": "Tips For Language Learners - Inglês Americano",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 326,
+      "title": "Tips For Language Learners - Inglês Britânico",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 327,
+      "title": "Tips For Language Learners - Texto Original e Tradução",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 328,
+      "title": "Tips For Language Learners - Inglês Americano - Legendado",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 329,
+      "title": "Tips For Language Learners - Inglês Britânico - Legendado",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 330,
+      "title": "Prática com vozes de outros países - Tips For Language Learners",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 331,
+      "title": "Tips For Language Learners - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 332,
+      "title": "Tips For Language Learners - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 333,
+      "title": "Tips For Language Learners - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 334,
+      "title": "Tips For Language Learners - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 335,
+      "title": "The Egyptian Great Pyramids - Inglês Americano",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 336,
+      "title": "The Egyptian Great Pyramids - Inglês Britânico",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 337,
+      "title": "The Egyptian Great Pyramids - Texto Original e Tradução",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 338,
+      "title": "The Egyptian Great Pyramids - Inglês Americano - Legendado",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 339,
+      "title": "The Egyptian Great Pyramids - Inglês Britânico - Legendado",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 340,
+      "title": "Prática com vozes de outros países - The Egyptian Great Pyramids",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 341,
+      "title": "The Egyptian Great Pyramids - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 342,
+      "title": "The Egyptian Great Pyramids - Sotaque da Tanzânia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 343,
+      "title": "The Egyptian Great Pyramids - Sotaque das Filipinas",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 344,
+      "title": "The Egyptian Great Pyramids - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 345,
+      "title": "The Development of Chocolate - Inglês Americano",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 346,
+      "title": "The Development of Chocolate - Inglês Britânico",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 347,
+      "title": "The Development of Chocolate - Texto Original e Tradução",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 348,
+      "title": "The Development of Chocolate - Inglês Americano - Legendado",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 349,
+      "title": "The Development of Chocolate - Inglês Britânico - Legendado",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 350,
+      "title": "Prática com vozes de outros países - The Development of Chocolate",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 351,
+      "title": "The Development of Chocolate - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 352,
+      "title": "The Development of Chocolate - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 353,
+      "title": "The Development of Chocolate - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 354,
+      "title": "The Development of Chocolate - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 355,
+      "title": "First Jobs of Famous People - Inglês Americano",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 356,
+      "title": "First Jobs of Famous People - Inglês Britânico",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 357,
+      "title": "First Jobs of Famous People - Texto Original e Tradução",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 358,
+      "title": "First Jobs of Famous People - Inglês Americano - Legendado",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 359,
+      "title": "First Jobs of Famous People - Inglês Britânico - Legendado",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 360,
+      "title": "Prática com vozes de outros países - First Jobs of Famous People",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 361,
+      "title": "First Jobs of Famous People - Sotaque do Quenia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 362,
+      "title": "First Jobs of Famous People - Sotaque da Tanzânia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 363,
+      "title": "First Jobs of Famous People - Sotaque das Filipinas",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 364,
+      "title": "First Jobs of Famous People - Sotaque da Índia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 365,
+      "title": "My Toy Store - Inglês Americano",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 366,
+      "title": "My Toy Store - Inglês Britânico",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 367,
+      "title": "My Toy Store - Texto Original e Tradução",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 368,
+      "title": "My Toy Store - Inglês Americano - Legendado",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 369,
+      "title": "My Toy Store - Inglês Britânico - Legendado",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 370,
+      "title": "Prática com vozes de outros países - My Toy Store",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 371,
+      "title": "My Toy Store - Sotaque do Quenia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 372,
+      "title": "My Toy Store - Sotaque da Tanzânia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 373,
+      "title": "My Toy Store - Sotaque das Filipinas",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 374,
+      "title": "My Toy Store - Sotaque da Índia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 375,
+      "title": "Las Vegas - Inglês Americano",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 376,
+      "title": "Las Vegas - Inglês Britânico",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 377,
+      "title": "Las Vegas - Texto Original e Tradução",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 378,
+      "title": "Las Vegas - Inglês Americano - Legendado",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 379,
+      "title": "Las Vegas - Inglês Britânico - Legendado",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 380,
+      "title": "Prática com vozes de outros países - Las Vegas",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 381,
+      "title": "Las Vegas - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 382,
+      "title": "Las Vegas - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 383,
+      "title": "Las Vegas - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 384,
+      "title": "Las Vegas - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 385,
+      "title": "Paul's first day on the job - Inglês Americano",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 386,
+      "title": "Paul's first day on the job - Inglês Britânico",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 387,
+      "title": "Paul's first day on the job - Texto Original e Tradução",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 388,
+      "title": "Paul's first day on the job - Inglês Americano - Legendado",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 389,
+      "title": "Paul's first day on the job - Inglês Britânico - Legendado",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 390,
+      "title": "Prática com vozes de outros países - Paul's first day on the job",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 391,
+      "title": "Paul's first day on the job - Sotaque do Quenia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 392,
+      "title": "Paul's first day on the job - Sotaque da Tanzânia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 393,
+      "title": "Paul's first day on the job - Sotaque das Filipinas",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 394,
+      "title": "Paul's first day on the job - Sotaque da Índia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 395,
+      "title": "Travelling on a Budget Across Europe - Inglês Americano",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 396,
+      "title": "Travelling on a Budget Across Europe - Inglês Britânico",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 397,
+      "title": "Travelling on a Budget Across Europe - Texto Original e Tradução",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 398,
+      "title": "Travelling on a Budget Across Europe - Inglês Americano - Legendado",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 399,
+      "title": "Travelling on a Budget Across Europe - Inglês Britânico - Legendado",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 400,
+      "title": "Prática com vozes de outros países - Travelling on a Budget Across Europe",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 401,
+      "title": "Travelling on a Budget Across Europe - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 402,
+      "title": "Travelling on a Budget Across Europe - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 403,
+      "title": "Travelling on a Budget Across Europe - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 404,
+      "title": "Travelling on a Budget Across Europe - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 405,
+      "title": "Coca-Cola - Inglês Americano",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 406,
+      "title": "Coca-Cola - Inglês Britânico",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 407,
+      "title": "Coca-Cola - Texto Original e Tradução",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 408,
+      "title": "Coca-Cola - Inglês Americano - Legendado",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 409,
+      "title": "Coca-Cola - Inglês Britânico - Legendado",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 410,
+      "title": "Prática com vozes de outros países - Coca-Cola",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 411,
+      "title": "Coca-Cola - Sotaque do Quenia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 412,
+      "title": "Coca-Cola - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 413,
+      "title": "Coca-Cola - Sotaque das Filipinas",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 414,
+      "title": "Coca-Cola - Sotaque da Índia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 415,
+      "title": "Young Social Media Millionaires - Inglês Americano",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 416,
+      "title": "Young Social Media Millionaires - Inglês Britânico",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 417,
+      "title": "Young Social Media Millionaires - Texto Original e Tradução",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 418,
+      "title": "Young Social Media Millionaires - Inglês Americano - Legendado",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 419,
+      "title": "Young Social Media Millionaires - Inglês Britânico - Legendado",
+      "duration_minutes": 12,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 420,
+      "title": "Prática com vozes de outros países - Young Social Media Millionaires",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 421,
+      "title": "Young Social Media Millionaires - Sotaque do Quenia",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 422,
+      "title": "Young Social Media Millionaires - Sotaque da Tanzânia",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 423,
+      "title": "Young Social Media Millionaires - Sotaque das Filipinas",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 424,
+      "title": "Young Social Media Millionaires - Sotaque da Índia",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 425,
+      "title": "Generation Y in The Workplace - Inglês Americano",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 426,
+      "title": "Generation Y in The Workplace - Inglês Britânico",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 427,
+      "title": "Generation Y in The Workplace - Texto Original e Tradução",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 428,
+      "title": "Generation Y in The Workplace - Inglês Americano - Legendado",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 429,
+      "title": "Generation Y in The Workplace - Inglês Britânico - Legendado",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 430,
+      "title": "Prática com vozes de outros países - Generation Y in The Workplace",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 431,
+      "title": "Generation Y in The Workplace - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 432,
+      "title": "Generation Y in The Workplace - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 433,
+      "title": "Generation Y in The Workplace - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 434,
+      "title": "Generation Y in The Workplace - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 435,
+      "title": "Ten Suggestions for Advancing Your Career - Inglês Americano",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 436,
+      "title": "Ten Suggestions for Advancing Your Career - Inglês Britânico",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 437,
+      "title": "Ten Suggestions for Advancing Your Career - Texto Original e Tradução",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 438,
+      "title": "Ten Suggestions for Advancing Your Career - Inglês Americano - Legendado",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 439,
+      "title": "Ten Suggestions for Advancing Your Career - Inglês Britânico - Legendado",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 440,
+      "title": "Prática com vozes de outros países - Ten Suggestions for Advancing Your Career",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 441,
+      "title": "Ten Suggestions for Advancing Your Career - Sotaque do Quenia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 442,
+      "title": "Ten Suggestions for Advancing Your Career - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 443,
+      "title": "Ten Suggestions for Advancing Your Career - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 444,
+      "title": "Ten Suggestions for Advancing Your Career - Sotaque da Índia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 445,
+      "title": "The Effects of Stress - Inglês Americano",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 446,
+      "title": "The Effects of Stress - Inglês Britânico",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 447,
+      "title": "The Effects of Stress - Texto Original e Tradução",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 448,
+      "title": "The Effects of Stress - Inglês Americano - Legendado",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 449,
+      "title": "The Effects of Stress - Inglês Britânico - Legendado",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 450,
+      "title": "Prática com vozes de outros países - The Effects of Stress",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 451,
+      "title": "The Effects of Stress - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 452,
+      "title": "The Effects of Stress - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 453,
+      "title": "The Effects of Stress - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 454,
+      "title": "The Effects of Stress - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 455,
+      "title": "Dating Tips - Inglês Americano",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 456,
+      "title": "Dating Tips - Inglês Britânico",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 457,
+      "title": "Dating Tips - Texto Original e Tradução",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 458,
+      "title": "Dating Tips - Inglês Americano - Legendado",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 459,
+      "title": "Dating Tips - Inglês Britânico - Legendado",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 460,
+      "title": "Prática com vozes de outros países - Dating Tips",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 461,
+      "title": "Dating Tips - Sotaque do Quenia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 462,
+      "title": "Dating Tips - Sotaque da Tanzânia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 463,
+      "title": "Dating Tips - Sotaque das Filipinas",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 464,
+      "title": "Dating Tips - Sotaque da Índia",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 465,
+      "title": "The Hotel of The Famous - Inglês Americano",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 466,
+      "title": "The Hotel of The Famous - Inglês Britânico",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 467,
+      "title": "The Hotel of The Famous - Texto Original e Tradução",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 468,
+      "title": "The Hotel of The Famous - Inglês Americano - Legendado",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 469,
+      "title": "The Hotel of The Famous - Inglês Britânico - Legendado",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 470,
+      "title": "Prática com vozes de outros países - The Hotel of The Famous",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 471,
+      "title": "The Hotel of The Famous - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 472,
+      "title": "The Hotel of The Famous - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 473,
+      "title": "The Hotel of The Famous - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 474,
+      "title": "The Hotel of The Famous - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 475,
+      "title": "An Overview of Internet History - Inglês Americano",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 476,
+      "title": "An Overview of Internet History - Inglês Britânico",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 477,
+      "title": "An Overview of Internet History - Texto Original e Tradução",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 478,
+      "title": "An Overview of Internet History - Inglês Americano - Legendado",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 479,
+      "title": "An Overview of Internet History - Inglês Britânico - Legendado",
+      "duration_minutes": 5,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 480,
+      "title": "Prática com vozes de outros países - An Overview of Internet History",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 481,
+      "title": "An Overview of Internet History - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 482,
+      "title": "An Overview of Internet History - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 483,
+      "title": "An Overview of Internet History - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 484,
+      "title": "An Overview of Internet History - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 485,
+      "title": "Overcoming The Fear of Public Speaking - Inglês Americano",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 486,
+      "title": "Overcoming The Fear of Public Speaking - Inglês Britânico",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 487,
+      "title": "Overcoming The Fear of Public Speaking - Texto Original e Tradução",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 488,
+      "title": "Overcoming The Fear of Public Speaking - Inglês Americano - Legendado",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 489,
+      "title": "Overcoming The Fear of Public Speaking - Inglês Britânico - Legendado",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 490,
+      "title": "Prática com vozes de outros países - Overcoming The Fear of Public Speaking",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 491,
+      "title": "Overcoming The Fear of Public Speaking - Sotaque do Quenia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 492,
+      "title": "Overcoming The Fear of Public Speaking - Sotaque da Tanzânia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 493,
+      "title": "Overcoming The Fear of Public Speaking - Sotaque das Filipinas",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 494,
+      "title": "Overcoming The Fear of Public Speaking - Sotaque da Índia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 495,
+      "title": "Valentine's Day - Inglês Americano",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 496,
+      "title": "Valentine's Day - Inglês Britânico",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 497,
+      "title": "Valentine's Day - Texto Original e Tradução",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 498,
+      "title": "Valentine's Day - Inglês Americano - Legendado",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 499,
+      "title": "Valentine's Day - Inglês Britânico - Legendado",
+      "duration_minutes": 9,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 500,
+      "title": "Prática com vozes de outros países - Valentine's Day",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 501,
+      "title": "Valentine's Day - Sotaque do Quenia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 502,
+      "title": "Valentine's Day - Sotaque da Tanzânia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 503,
+      "title": "Valentine's Day - Sotaque das Filipinas",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 504,
+      "title": "Valentine's Day - Sotaque da Índia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 505,
+      "title": "The Spanish Flu - Inglês Americano",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 506,
+      "title": "The Spanish Flu - Inglês Britânico",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 507,
+      "title": "The Spanish Flu - Texto Original e Tradução",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 508,
+      "title": "The Spanish Flu - Inglês Americano - Legendado",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 509,
+      "title": "The Spanish Flu - Inglês Britânico - Legendado",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 510,
+      "title": "Prática com vozes de outros países - The Spanish Flu",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 511,
+      "title": "The Spanish Flu - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 512,
+      "title": "The Spanish Flu - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 513,
+      "title": "The Spanish Flu - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 514,
+      "title": "The Spanish Flu - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 515,
+      "title": "Environmental Crisis - Inglês Americano",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 516,
+      "title": "Environmental Crisis - Inglês Britânico",
+      "duration_minutes": 6,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 517,
+      "title": "Environmental Crisis - Texto Original e Tradução",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 518,
+      "title": "Environmental Crisis - Inglês Americano - Legendado",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 519,
+      "title": "Environmental Crisis - Inglês Britânico - Legendado",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 520,
+      "title": "Prática com vozes de outros países - Environmental Crisis",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 521,
+      "title": "Environmental Crisis - Sotaque do Quenia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 522,
+      "title": "Environmental Crisis - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 523,
+      "title": "Environmental Crisis - Sotaque das Filipinas",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 524,
+      "title": "Environmental Crisis - Sotaque da Índia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 525,
+      "title": "Parkour - Inglês Americano",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 526,
+      "title": "Parkour - Inglês Britânico",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 527,
+      "title": "Parkour - Texto Original e Tradução",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 528,
+      "title": "Parkour - Inglês Americano - Legendado",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 529,
+      "title": "Parkour - Inglês Britânico - Legendado",
+      "duration_minutes": 11,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 530,
+      "title": "Prática com vozes de outros países - Parkour",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 531,
+      "title": "Parkour - Sotaque do Quenia",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 532,
+      "title": "Parkour - Sotaque da Tanzânia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 533,
+      "title": "Parkour - Sotaque das Filipinas",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 534,
+      "title": "Parkour - Sotaque da Índia",
+      "duration_minutes": 4,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 535,
+      "title": "Job Replacement by AI - Inglês Americano",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 536,
+      "title": "Job Replacement by AI - Inglês Britânico",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 537,
+      "title": "Job Replacement by AI - Texto Original e Tradução",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 538,
+      "title": "Job Replacement by AI - Inglês Americano - Legendado",
+      "duration_minutes": 8,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 539,
+      "title": "Job Replacement by AI - Inglês Britânico - Legendado",
+      "duration_minutes": 7,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 540,
+      "title": "Prática com vozes de outros países - Job Replacement by AI",
+      "duration_minutes": 1,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 541,
+      "title": "Job Replacement by AI - Sotaque do Quenia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 542,
+      "title": "Job Replacement by AI - Sotaque da Tanzânia",
+      "duration_minutes": 2,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 543,
+      "title": "Job Replacement by AI - Sotaque das Filipinas",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 544,
+      "title": "Job Replacement by AI - Sotaque da Índia",
+      "duration_minutes": 3,
+      "udemy_status": "not_completed",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "lesson_number": 545,
+      "title": "Aula Bônus e Onde Está o Seu Certificado",
+      "duration_minutes": 6,
+      "udemy_status": "unknown",
+      "type": "lesson",
+      "source": "user_udemy_export_2026-10-13"
+    }
+  ],
+  "tests": [
+    {
+      "test_number": 1,
+      "title": "Halloween - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 2,
+      "title": "Summer Vacation - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 3,
+      "title": "Tips For Language Learners - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 4,
+      "title": "The Egyptian Great Pyramids - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 5,
+      "title": "The Development of Chocolate - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 6,
+      "title": "First Jobs of Famous People - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 7,
+      "title": "My Toy Store - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 8,
+      "title": "Las Vegas - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 9,
+      "title": "Paul's first day on the job - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 10,
+      "title": "Travelling on a Budget Across Europe - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 11,
+      "title": "Coca-Cola - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 12,
+      "title": "Young Social Media Millionaires - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 13,
+      "title": "Generation Y in The Workplace - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 14,
+      "title": "Ten Suggestions for Advancing Your Career - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 15,
+      "title": "The Effects of Stress - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 16,
+      "title": "Dating Tips - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 17,
+      "title": "The Hotel of The Famous - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 18,
+      "title": "An Overview of Internet History - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 19,
+      "title": "Overcoming The Fear of Public Speaking - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 20,
+      "title": "Valentine's Day - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 21,
+      "title": "The Spanish Flu - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 22,
+      "title": "Environmental Crisis - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 23,
+      "title": "Parkour - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    },
+    {
+      "test_number": 24,
+      "title": "Job Replacement by AI - Text Comprehension",
+      "source": "user_udemy_export_2026-10-13"
+    }
+  ]
+}
