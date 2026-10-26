@@ -19,11 +19,17 @@ export interface TutorMessage { role: 'user' | 'assistant'; content: string; cre
 export interface TutorSession { id: string; scenarioId: string; title: string; level: string; createdAt: string; messages: TutorMessage[] }
 export interface ActivityHistoryEvent { id: string; activityKey: string; day: number; kind: 'rescheduled' | 'completed_late' | 'waived'; at: string; fromDate?: string; toDate?: string; evidence?: string }
 export interface AppData {
+  savedAt?: number;
   version: 1; activities: Record<string, ActivityRecord>; dayNotes: Record<number, string>; dayOutputs?: Record<string, string>; lectures: Lecture[]; watched: string[]; courseTests?: CourseTest[]; catalogImport?: { courseTitle: string; source: string; reportedProgress: string; importedLessonCount: number; importedTestCount: number }; inputProgress?: Record<string, InputRecord>;
   skills?: Partial<Record<SkillId, SkillProgress>>; skillAttempts?: SkillAttempt[]; tutorSessions?: TutorSession[]; activityHistory?: ActivityHistoryEvent[]; startupMetrics?: Record<string, string>;
   cards: ReviewCard[]; assessments: Array<{ id?: string; date: string; period: string; dimension: string; score: number; notes: string; correctAnswers?: number; totalQuestions?: number; answers?: number[] }>;
   speaking: Array<{ date: string; topic: string; minutes: number; notes: string }>;
   overrides: Record<number, string>;
+  studySession?: { day: number; activityKey: string; open: boolean };
+  quizDrafts?: Record<string, number[]>;
+  quizQuestionIds?: Record<string, string[]>;
+  vocabularyProgress?: Record<string, { grade: 'hard' | 'good'; updatedAt: string }>;
+  activityDifficulty?: Record<string, 'easy' | 'hard'>;
   settings: { startDate: string; targetMinutes: number; timezone: string; level: string };
 }
 
@@ -157,6 +163,11 @@ export function mergeProgress(local: AppData, incoming: AppData): AppData {
     activities,
     dayNotes: { ...(incoming.dayNotes || {}), ...(local.dayNotes || {}) },
     dayOutputs: { ...(incoming.dayOutputs || {}), ...(local.dayOutputs || {}) },
+    studySession: local.studySession || incoming.studySession,
+    quizDrafts: { ...(incoming.quizDrafts || {}), ...(local.quizDrafts || {}) },
+    quizQuestionIds: { ...(incoming.quizQuestionIds || {}), ...(local.quizQuestionIds || {}) },
+    vocabularyProgress: { ...(incoming.vocabularyProgress || {}), ...(local.vocabularyProgress || {}) },
+    activityDifficulty: { ...(incoming.activityDifficulty || {}), ...(local.activityDifficulty || {}) },
     overrides: { ...(incoming.overrides || {}), ...(local.overrides || {}) },
     lectures,
     watched: [...new Set([...(incoming.watched || []), ...(local.watched || []), ...lectures.filter((item) => item.status === 'watched').map((item) => item.id)])],
@@ -180,12 +191,14 @@ export function mergeProgress(local: AppData, incoming: AppData): AppData {
   };
 }
 
-export function scheduleReview(current: ReviewCard, grade: 'easy' | 'hard', today = new Date()): ReviewCard {
-  const interval = grade === 'easy' ? ([1, 3, 7, 14, 30].find((step) => step > current.interval) ?? 30) : 1;
+export function scheduleReview(current: ReviewCard, grade: 'wrong' | 'hard' | 'good' | 'easy', today = new Date()): ReviewCard {
+  const steps = [1, 3, 7, 14, 30];
+  const nextIndex = steps.findIndex((step) => step > current.interval);
+  const interval = grade === 'wrong' || grade === 'hard' ? 1 : nextIndex < 0 ? 30 : steps[nextIndex];
   const todayISO = new Intl.DateTimeFormat('en-CA', { timeZone: seed.metadata.timezone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(today);
   const [year, month, date] = todayISO.split('-').map(Number);
   const due = new Date(Date.UTC(year, month - 1, date + interval));
-  return { ...current, interval, ease: Math.max(1.3, Math.min(2.8, current.ease + (grade === 'easy' ? 0.1 : -0.2))), dueDate: due.toISOString().slice(0, 10) };
+  return { ...current, interval, ease: Math.max(1.3, Math.min(2.8, current.ease + (grade === 'easy' ? 0.1 : grade === 'good' ? 0 : grade === 'hard' ? -0.2 : -0.3))), dueDate: due.toISOString().slice(0, 10) };
 }
 
 export function todayISO(today = new Date()): string {

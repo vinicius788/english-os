@@ -27,6 +27,25 @@ export function startupModuleForWeek(week: number) {
   return startupModules[index];
 }
 
+// Short practice examples authored for the existing vocabulary. They contain no
+// claims about the learner's company or its metrics.
+const vocabularyExamples: Record<string, string> = {
+  founder: 'I am a founder.', company: 'This company builds software.', build: 'We build a simple tool.', platform: 'This platform helps users.',
+  help: 'We help new users.', trader: 'A trader uses the platform.', user: 'One user shared feedback.',
+  problem: 'What problem does this solve?', customer: 'A customer has a question.', need: 'Customers need clear instructions.', because: 'We ask because we want to understand.',
+  feature: 'This feature is easy to use.', release: 'The next release is planned.', feedback: 'We ask for feedback.', improve: 'We improve the product step by step.',
+  question: 'I have a question for the customer.', understand: 'I want to understand the request.', request: 'Please confirm the request.',
+  subscription: 'This is a monthly subscription.', monthly: 'The plan has a monthly fee.', plan: 'Please choose a plan.', 'paying customer': 'A paying customer has an active subscription.',
+  'monthly recurring revenue': 'Monthly recurring revenue is a business metric.', acquisition: 'Acquisition describes how new customers arrive.', conversion: 'Conversion depends on a defined action.', period: 'State the period for each metric.',
+  retention: 'Retention describes customers who stay.', churn: 'Churn describes customers who leave.', cohort: 'A cohort is a defined customer group.', renewal: 'A renewal extends a subscription.',
+  'growth strategy': 'A growth strategy needs a clear goal.', 'product-market fit': 'Product-market fit needs evidence from users.', segment: 'Define one customer segment.', evidence: 'Use evidence to test the idea.',
+  partnership: 'A partnership has shared goals.', funding: 'Funding can support a defined plan.', investment: 'An investment needs clear terms.', runway: 'Runway depends on cash and spending.',
+};
+
+export function vocabularyExample(module: StartupModule, english: string) {
+  return module.phrases.find((phrase) => phrase.toLowerCase().includes(english.toLowerCase())) || vocabularyExamples[english];
+}
+
 export function sampleWithMetrics(text: string, metrics: Record<string, string>) {
   return text.replace(/\[\[(\w+)\]\]/g, (_, key: string) => metrics[key]?.trim() || '___');
 }

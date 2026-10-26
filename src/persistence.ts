@@ -4,6 +4,8 @@ import { defaultData, importUdemyCatalog, mergeProgress, bundledCatalog } from '
 const KEY = 'english-os:v1';
 const DB = 'english-os';
 const STORE = 'app';
+let lastSaveStamp = 0;
+let pendingWrite: Promise<void> = Promise.resolve();
 
 function restoreData(value: AppData): AppData {
   const restored = mergeProgress(value, defaultData());
@@ -25,39 +27,45 @@ function openDb(): Promise<IDBDatabase> {
 }
 
 export async function loadData(): Promise<AppData> {
+  let stored: AppData | undefined;
   if (typeof indexedDB !== 'undefined') {
     try {
       const db = await openDb();
-      const value = await new Promise<AppData | undefined>((resolve, reject) => {
+      stored = await new Promise<AppData | undefined>((resolve, reject) => {
         const request = db.transaction(STORE, 'readonly').objectStore(STORE).get(KEY);
         request.onsuccess = () => resolve(request.result as AppData | undefined);
         request.onerror = () => reject(request.error);
       });
       db.close();
-      if (value?.version === 1) return restoreData(value);
     } catch { /* localStorage is the compatibility fallback */ }
   }
-  try { const value = localStorage.getItem(KEY); return value ? restoreData(JSON.parse(value) as AppData) : defaultData(); }
-  catch { return defaultData(); }
+  let local: AppData | undefined;
+  try { const value = localStorage.getItem(KEY); local = value ? JSON.parse(value) as AppData : undefined; } catch { /* IndexedDB copy remains available */ }
+  const freshest = local?.version === 1 && (local.savedAt || 0) > (stored?.savedAt || 0) ? local : stored?.version === 1 ? stored : local?.version === 1 ? local : undefined;
+  lastSaveStamp = Math.max(lastSaveStamp, freshest?.savedAt || 0);
+  return freshest ? restoreData(freshest) : defaultData();
 }
 
 export async function saveData(data: AppData): Promise<void> {
-  const serialized = JSON.stringify(data);
+  const snapshot = { ...data, savedAt: lastSaveStamp = Math.max(Date.now(), lastSaveStamp + 1) };
+  const serialized = JSON.stringify(snapshot);
   try { localStorage.setItem(KEY, serialized); } catch { /* IndexedDB can still be available in restricted browser modes. */ }
   if (typeof indexedDB === 'undefined') return;
-  try {
+  pendingWrite = pendingWrite.catch(() => {}).then(async () => { try {
     const db = await openDb();
     await new Promise<void>((resolve, reject) => {
       const transaction = db.transaction(STORE, 'readwrite');
-      transaction.objectStore(STORE).put(data, KEY);
+      transaction.objectStore(STORE).put(snapshot, KEY);
       transaction.oncomplete = () => resolve();
       transaction.onerror = () => reject(transaction.error);
     });
     db.close();
-  } catch { /* localStorage copy remains available */ }
+  } catch { /* localStorage copy remains available */ } });
+  await pendingWrite;
 }
 
 export async function clearData(): Promise<void> {
+  await pendingWrite;
   localStorage.removeItem(KEY);
   if (typeof indexedDB === 'undefined') return;
   try { const db = await openDb(); await new Promise<void>((resolve, reject) => { const req = db.transaction(STORE, 'readwrite').objectStore(STORE).delete(KEY); req.onsuccess = () => resolve(); req.onerror = () => reject(req.error); }); db.close(); } catch { /* no-op */ }

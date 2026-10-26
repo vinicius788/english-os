@@ -9,6 +9,7 @@ import { verifiedResources, isTrustedResourceUrl } from '../resources';
 import { conversationScenarios, chatGPTVoicePrompt } from '../speaking';
 import { skillRetention } from '../adaptive';
 import { DailyPlan } from './DailyPlan';
+import { nextPending } from '../guidedStudy';
 import { allocateMinutes, dayPlanStatus, dailyTarget, makeDailyPlan } from '../studyPlan';
 import { TutorPage } from './TutorPage';
 import { StartupPage } from './StartupPage';
@@ -77,6 +78,13 @@ function SectionTitle({ children, detail }: { children: ReactNode; detail?: Reac
 function ProgressBar({ value }: { value: number }) { return <div className="progress-track"><span style={{ width: `${Math.max(0, Math.min(100, value))}%` }} /></div>; }
 function Dashboard({ data }: { data: AppData }) {
   const today = getTodayDay(new Date(), data.settings.startDate); const due = dueCards(data);
+  const sessionDay = data.studySession?.day && data.studySession.day >= 1 && data.studySession.day <= 182 ? data.studySession.day : today.day;
+  const resumeDay = nextPending(makeDailyPlan(sessionDay, data), data) ? sessionDay : Math.min(182, sessionDay + 1);
+  const heroDay = days[resumeDay - 1];
+  const heroPlan = makeDailyPlan(resumeDay, data);
+  const selected = data.studySession?.day === resumeDay && heroPlan.find((item) => item.key === data.studySession?.activityKey && !['done', 'skipped'].includes(data.activities[item.key]?.status || 'todo'));
+  const heroActivity = selected || nextPending(heroPlan, data);
+  const heroLink = `/hoje?dia=${heroDay.day}${heroActivity ? `&atividade=${encodeURIComponent(heroActivity.key)}` : ''}`;
   const completed = days.filter((day) => dayPlanStatus(day.day, data, todayISO()) === 'completed').length;
   const minutes = days.flatMap((day) => makeDailyPlan(day.day, data)).reduce((sum, task) => { const record = data.activities[task.key]; return sum + (record?.status === 'done' ? record.actualMinutes ?? task.minutes : 0); }, 0);
   const currentWeekDays = days.slice(Math.floor((today.day - 1) / 7) * 7, Math.floor((today.day - 1) / 7) * 7 + 7);
@@ -84,9 +92,9 @@ function Dashboard({ data }: { data: AppData }) {
   const weekDone = currentWeekDays.reduce((sum, day) => sum + makeDailyPlan(day.day, data).reduce((taskSum, task) => taskSum + (data.activities[task.key]?.status === 'done' ? (data.activities[task.key]?.actualMinutes || task.minutes) : 0), 0), 0);
   const nextLecture = data.lectures.find((lecture) => !lectureIsComplete(lecture, data));
   return <>
-    <PageHeading eyebrow={format(new Date(), 'EEEE, d MMMM', { locale: ptBR }).toLocaleUpperCase('pt-BR')} title="Olá, vamos estudar?" description="Um passo de cada vez. Seu plano completo já está pronto para começar amanhã." ><span className="date-pill"><span className="live-dot" /> Dia {today.day} de 182</span></PageHeading>
+    <PageHeading eyebrow={format(new Date(), 'EEEE, d MMMM', { locale: ptBR }).toLocaleUpperCase('pt-BR')} title="Olá, vamos estudar?" description="Abra sua próxima atividade e continue no seu ritmo." ><span className="date-pill"><span className="live-dot" /> Dia {today.day} de 182</span></PageHeading>
     <div className="dashboard-grid">
-      <Card className="hero-card"><div className="hero-copy"><div className="eyebrow light">SEU PLANO · DIA {today.day}</div><h2>{today.weekly_theme}</h2><p>{today.daily_output} — no seu ritmo, sem pular etapas.</p><div className="hero-meta"><span><CalendarDays size={15} /> {formatDate(getScheduledDate(today.day, data))}</span><span><Clock3 size={15} /> {today.minutes} min</span></div><NavLink className="button hero-button" to={`/hoje?dia=${today.day}`}>Começar o dia <ArrowRight size={16} /></NavLink></div><div className="hero-illustration"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="planet">A<span>0</span></div><div className="spark spark-a">✳</div><div className="spark spark-b">✦</div><div className="orb-dot" /></div></Card>
+      <Card className="hero-card"><div className="hero-copy"><div className="eyebrow light">SEU PLANO · DIA {heroDay.day}</div><h2>{heroDay.weekly_theme}</h2><p>{heroDay.daily_output} — no seu ritmo, sem pular etapas.</p><div className="hero-meta"><span><CalendarDays size={15} /> {formatDate(getScheduledDate(heroDay.day, data))}</span><span><Clock3 size={15} /> {heroDay.minutes} min</span></div><NavLink className="button hero-button" to={heroLink}>{data.studySession && resumeDay === sessionDay ? 'CONTINUAR DE ONDE PAREI' : 'CONTINUAR ESTUDANDO'} <ArrowRight size={16} /></NavLink></div><div className="hero-illustration"><div className="orbit orbit-one" /><div className="orbit orbit-two" /><div className="planet">A<span>0</span></div><div className="spark spark-a">✳</div><div className="spark spark-b">✦</div><div className="orb-dot" /></div></Card>
       <Card className="progress-card"><div className="card-topline"><span>PROGRESSO DO PLANO</span><span className="subtle">26 semanas</span></div><div className="big-number">{completed}<span> / 182 dias</span></div><ProgressBar value={completed / 182 * 100} /><div className="progress-footer"><span>{Math.round(completed / 182 * 100)}% completo</span><span>Meta: A2 / B1*</span></div><div className="level-note">*Objetivo ambicioso de estudo; conclusão não certifica nível.</div></Card>
     </div>
     <div className="stats-row"><StatCard icon={<Clock3 size={18} />} label="Carga concluída (estimada)" value={`${(minutes / 60).toFixed(minutes % 60 ? 1 : 0)} h`} helper="duração planejada das atividades concluídas" /><StatCard icon={<Check size={18} />} label="Atividades feitas" value={String(Object.values(data.activities).filter((item) => item.status === 'done').length)} helper="desde o início" /><StatCard icon={<RotateCcw size={18} />} label="Revisões vencidas" value={String(due.length)} helper={due.length ? 'prontas para revisar' : 'tudo em dia'} accent={due.length > 0} /></div>
@@ -100,13 +108,22 @@ function StatCard({ icon, label, value, helper, accent = false }: { icon: ReactN
 function Today({ data, update, showNotice }: { data: AppData; update: (fn: (current: AppData) => AppData) => void; showNotice: (message: string) => void }) {
   const [searchParams, setSearchParams] = useSearchParams();
   const todayNumber = getTodayDay(new Date(), data.settings.startDate).day;
-  const [selectedDay, setSelectedDay] = useState(Math.max(1, Math.min(182, Number(searchParams.get('dia')) || todayNumber)));
+  const [selectedDay, setSelectedDay] = useState(Math.max(1, Math.min(182, Number(searchParams.get('dia')) || data.studySession?.day || todayNumber)));
   const [notes, setNotes] = useState(data.dayNotes[selectedDay] || '');
   const day = days.find((candidate) => candidate.day === selectedDay)!;
   const scheduledDate = getScheduledDate(day.day, data);
   const explicit = firstTwoWeekTasks[day.week];
   const coursePlan = getDailyCoursePlan(day.day, data, allocateMinutes(dailyTarget(day, data))[0]);
   useEffect(() => { setNotes(data.dayNotes[selectedDay] || ''); }, [selectedDay, data.dayNotes]);
+  useEffect(() => {
+    const dayParam = Number(searchParams.get('dia'));
+    if (dayParam >= 1 && dayParam <= 182 && dayParam !== selectedDay) setSelectedDay(dayParam);
+    const requested = searchParams.get('atividade');
+    if (requested && dayParam >= 1 && dayParam <= 182 && requested.startsWith(`${dayParam}:`)) {
+      update((current) => ({ ...current, studySession: { day: dayParam, activityKey: requested, open: true } }));
+      setSearchParams({ dia: String(dayParam) }, { replace: true });
+    }
+  }, [searchParams, selectedDay, setSearchParams, update]);
   const selectDay = (number: number) => { const next = Math.max(1, Math.min(182, number)); setSelectedDay(next); setSearchParams({ dia: String(next) }); };
   return <><PageHeading eyebrow="SEU PLANO DE ESTUDO" title="Estudo de hoje" description="Siga as etapas na ordem que fizer sentido. Você pode pausar e continuar depois."><div className="day-switcher"><button aria-label="Dia anterior" onClick={() => selectDay(selectedDay - 1)}>‹</button><span>Dia {day.day} <small>de 182</small></span><button aria-label="Próximo dia" onClick={() => selectDay(selectedDay + 1)}>›</button></div></PageHeading>
     <div className="today-overview"><div className="today-date"><CalendarDays size={18} /><span>{formatDate(scheduledDate)}<small>Semana {day.week} · {day.cefr_target}{data.overrides[day.day] ? ' · reagendado' : ''}</small></span></div><div className="today-focus"><b>{day.weekly_theme}</b><span>{day.daily_output}</span></div><div className="today-duration"><Clock3 size={17} /><b>{dailyTarget(day, data)} min</b></div></div>

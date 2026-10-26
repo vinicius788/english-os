@@ -1,90 +1,75 @@
 import { useState } from 'react';
-import type { AppData, ActivityHistoryEvent, ActivityRecord, SkillId } from '../domain';
-import { recordSkillAttempt, scoreQuiz } from '../adaptive';
-import { dailyTarget, makeDailyPlan, overdueActivities, type PlannedActivity } from '../studyPlan';
-import { days, getScheduledDate } from '../domain';
+import { Link } from 'react-router-dom';
+import { scoreQuiz } from '../adaptive';
+import { days, getDailyCoursePlan, lectureIsComplete, todayISO, type AppData } from '../domain';
+import { finishActivity, gradeCard, gradeVocabulary, nextPending, resolveContent, selectedActivity, submitDailyQuiz } from '../guidedStudy';
+import { isTrustedResourceUrl, verifiedResources } from '../resources';
+import { chatGPTVoicePrompt, conversationScenarios } from '../speaking';
+import { startupModules, vocabularyExample } from '../startup';
+import { allocateMinutes, dailyTarget, makeDailyPlan, overdueActivities, type PlannedActivity } from '../studyPlan';
 
-type Props = { dayNumber: number; currentDayNumber?: number; data: AppData; update: (fn: (current: AppData) => AppData) => void; showNotice: (message: string) => void };
+type Props = { dayNumber: number; currentDayNumber?: number; data: AppData; update: (fn: (current: AppData) => AppData) => void; showNotice: (message: string) => void; requestedActivityKey?: string };
 
-export function DailyPlan({ dayNumber, currentDayNumber = dayNumber, data, update, showNotice }: Props) {
+export function DailyPlan({ dayNumber, currentDayNumber = dayNumber, data, update, showNotice, requestedActivityKey }: Props) {
   const day = days[dayNumber - 1];
   const plan = makeDailyPlan(dayNumber, data);
-  const allOverdue = overdueActivities(currentDayNumber, data);
-  const overdue = allOverdue.slice(0, 6);
-  const complete = plan.filter((activity) => data.activities[activity.key]?.status === 'done' || data.activities[activity.key]?.status === 'skipped').length;
+  const complete = plan.filter((item) => ['done', 'skipped'].includes(data.activities[item.key]?.status || 'todo')).length;
+  const requested = requestedActivityKey && plan.find((item) => item.key === requestedActivityKey);
+  const activity = requested || selectedActivity(plan, data, dayNumber);
+  const sessionOpen = Boolean(activity && (requested || (data.studySession?.day === dayNumber && data.studySession.activityKey === activity.key && data.studySession.open)));
+  const status = activity && data.activities[activity.key]?.status;
+  const upcoming = activity ? nextPending(plan, data, activity.key) : undefined;
+  const overdue = overdueActivities(currentDayNumber, data).slice(0, 6);
+  const open = (key: string) => update((current) => ({ ...current, studySession: { day: dayNumber, activityKey: key, open: true } }));
   return <div className="daily-engine">
-    <section className="card tasks-card"><div className="section-title"><h2>Plano adaptativo do dia</h2><span className="subtle">{complete} de {plan.length} etapas · meta {dailyTarget(day, data)} min</span></div>
-      <p className="task-intro">{day.daily_instruction} A ordem do curso é mantida; conclusões de tarefas são diferentes de evidência de domínio.</p>
-      <div className="task-list">{plan.map((activity) => <DailyActivity key={activity.key} activity={activity} dayNumber={dayNumber} data={data} update={update} showNotice={showNotice} />)}</div>
-      <div className="task-total"><span>Meta do plano</span><b>{dailyTarget(day, data)} minutos</b></div>
+    <section className="card guided-card" id="estudo-guiado"><div className="section-title"><h2>Estudo guiado</h2><span className="subtle">{complete} de {plan.length} etapas · {dailyTarget(day, data)} min</span></div><div className="guided-progress"><span style={{ width: `${complete / plan.length * 100}%` }} /></div>
+      {!activity ? <div className="guided-finished"><h3>ESTUDO DE HOJE CONCLUÍDO</h3><p>{plan.length} etapas registradas. Próxima sessão: dia {Math.min(182, dayNumber + 1)}.</p><Link className="button primary" to={`/hoje?dia=${Math.min(182, dayNumber + 1)}`}>Ver próxima sessão</Link></div> : <><div className="guided-current"><span className="eyebrow">ETAPA {activity.index + 1} DE {plan.length} · {activity.kind.toUpperCase()}</span><h3>{activity.title}</h3><p>{activity.objective}</p><small>{activity.minutes} min</small></div>
+        {status === 'done' || status === 'skipped' ? <div className="guided-finished"><p>Etapa registrada. {status === 'skipped' ? 'Dispensada com evidência.' : 'Conteúdo concluído; domínio depende das verificações.'}</p>{activity.kind === 'quiz' && status === 'done' && <QuizResult activity={activity} data={data} />}{upcoming ? <button className="button primary guided-main-button" onClick={() => open(upcoming.key)}>PRÓXIMA ATIVIDADE →</button> : <h3>ESTUDO DE HOJE CONCLUÍDO</h3>}</div> : sessionOpen ? <GuidedContent key={activity.key} activity={activity} data={data} update={update} showNotice={showNotice} currentDayNumber={currentDayNumber} /> : <button className="button primary guided-main-button" onClick={() => open(activity.key)}>CONTINUAR ESTUDANDO →</button>}</>}
     </section>
-    {allOverdue.length > 0 && <section className="card overdue-card"><div className="section-title"><h2>Pendências para retomar</h2><span className="status-badge status-overdue">{allOverdue.length} em atraso</span></div><p>Estas tarefas permanecem no histórico do dia de origem. Concluí-las agora atualiza o registro original e guarda a data real da conclusão. A fila Udemy continua ordenada em seu bloco diário.</p><div className="task-list">{overdue.map((activity) => <DailyActivity key={activity.key} activity={activity} dayNumber={currentDayNumber} isOverdue data={data} update={update} showNotice={showNotice} />)}</div>{allOverdue.length > overdue.length && <small>Mostrando as primeiras {overdue.length} pendências, em ordem pedagógica.</small>}</section>}
+    <details className="card guided-list"><summary>Ver todas as atividades do dia</summary><div className="guided-steps">{plan.map((item) => <div className="guided-step" key={item.key}><span>{String(item.index + 1).padStart(2, '0')}</span><div><b>{item.title}</b><small>{item.minutes} min · {data.activities[item.key]?.status === 'done' ? 'Concluída' : data.activities[item.key]?.status === 'skipped' ? 'Dispensada' : 'Pendente'}</small></div><button className="button secondary" onClick={() => open(item.key)}>Fazer agora</button></div>)}</div></details>
+    {overdue.length > 0 && <details className="card guided-list"><summary>{overdue.length} pendência(s) anteriores</summary><div className="guided-steps">{overdue.map((item) => <div className="guided-step" key={item.key}><span>{item.day}</span><div><b>{item.title}</b><small>Dia de origem {item.day}</small></div><Link className="button secondary" to={`/hoje?dia=${item.day}&atividade=${encodeURIComponent(item.key)}`}>Retomar</Link></div>)}</div></details>}
   </div>;
 }
 
-function DailyActivity({ activity, dayNumber, data, update, showNotice, isOverdue = false }: Props & { activity: PlannedActivity; isOverdue?: boolean }) {
-  const [answers, setAnswers] = useState<number[]>([]);
-  const [quizResult, setQuizResult] = useState<ReturnType<typeof scoreQuiz> | null>(null);
-  const record = data.activities[activity.key];
-  const day = days[activity.day - 1];
-  const completed = record?.status === 'done';
-  const waived = record?.status === 'skipped';
-  const toggle = () => update((current) => {
-    if (completed) { const activities = { ...current.activities }; delete activities[activity.key]; return { ...current, activities }; }
-    const now = new Date();
-    const activities = { ...current.activities, [activity.key]: { status: 'done', updatedAt: now.toISOString(), completedAt: now.toISOString(), lifecycle: 'completed', scheduledDate: getScheduledDate(activity.day, current), ...(activity.kind === 'writing' ? { notes: current.dayOutputs?.[activity.key] || '' } : {}) } satisfies ActivityRecord };
-    const history: ActivityHistoryEvent[] = [...(current.activityHistory || [])];
-    if (activity.day < dayNumber) history.push({ id: crypto.randomUUID(), activityKey: activity.key, day: activity.day, kind: 'completed_late', at: now.toISOString(), fromDate: getScheduledDate(activity.day, current), toDate: getScheduledDate(dayNumber, current) });
-    return { ...current, activities, activityHistory: history };
-  });
-  const waive = () => {
-    if (completed || waived) return;
-    const evidence = window.prompt('Qual avaliação ou evidência permite dispensar esta atividade?');
-    if (!evidence?.trim()) return;
-    const now = new Date().toISOString();
-    update((current) => ({ ...current, activities: { ...current.activities, [activity.key]: { status: 'skipped', lifecycle: 'waived', updatedAt: now, completedAt: now, notes: evidence.trim(), scheduledDate: getScheduledDate(activity.day, current) } }, activityHistory: [...(current.activityHistory || []), { id: crypto.randomUUID(), activityKey: activity.key, day: activity.day, kind: 'waived', at: now, evidence: evidence.trim() }] }));
-  };
-  const toggleInputProgress = (field: 'watched' | 'understood' | 'repeat', value: boolean) => {
-    if (!activity.resourceId) return;
-    update((current) => { const previous = current.inputProgress?.[activity.resourceId!] || { watched: false, understood: false, repeat: false, updatedAt: '' }; return { ...current, inputProgress: { ...(current.inputProgress || {}), [activity.resourceId!]: { ...previous, [field]: value, updatedAt: new Date().toISOString() } } }; });
-  };
-  const submitQuiz = () => {
-    const questions = activity.quizQuestions || [];
-    let result: ReturnType<typeof scoreQuiz>;
-    try { result = scoreQuiz(questions, answers); } catch (error) { showNotice(error instanceof Error ? error.message : 'Responda todas as questões.'); return; }
-    setQuizResult(result);
-    update((current) => {
-      const grouped = new Map<SkillId, { correct: number; total: number }>();
-      questions.forEach((question, index) => { const score = grouped.get(question.skill) || { correct: 0, total: 0 }; score.total += 1; if (answers[index] === question.answer) score.correct += 1; grouped.set(question.skill, score); });
-      let next = { ...current };
-      for (const [skill, score] of grouped) next = recordSkillAttempt(next, skill, score.correct, score.total, `quiz:${questions.filter((question) => question.skill === skill).map((question) => question.id).join(',')}`);
-      const now = new Date();
-      const cards = [...(current.cards || [])];
-      result.explanations.filter((item) => !item.correct).forEach((item) => {
-        const question = questions.find((candidate) => candidate.id === item.questionId)!;
-        cards.push({ id: `quiz-${crypto.randomUUID()}`, phrase: question.prompt, example: item.answer, meaning: item.explanation, topic: question.skill === 'startup' ? 'startup' : 'cotidiano', dueDate: new Date(now.getTime() + 86400000).toISOString().slice(0, 10), interval: 0, ease: 2.3 });
-      });
-      const activities = { ...current.activities, [activity.key]: { status: 'done', updatedAt: now.toISOString(), completedAt: now.toISOString(), lifecycle: 'completed', scheduledDate: getScheduledDate(activity.day, current), comprehension: Math.round(result.correct / result.total * 5), notes: `Teste: ${result.correct}/${result.total}; erros entram na revisão.` } satisfies ActivityRecord };
-      let assessments = current.assessments;
-      if (activity.day % 28 === 0 || activity.day === 182) {
-        assessments = [{ id: crypto.randomUUID(), date: now.toISOString(), period: activity.day === 182 ? '182 dias · avaliação final' : `${activity.day} dias · avaliação mensal`, dimension: `Leitura e estruturas ${day.cefr_target}`, score: Math.max(1, Math.round(result.correct / result.total * 5)), correctAnswers: result.correct, totalQuestions: result.total, answers, notes: 'Resultado do teste rápido objetivo; mede somente esta amostra, não certifica CEFR.' }, ...assessments];
-      }
-      return { ...next, cards, activities, assessments };
-    });
-    showNotice(`Resultado salvo: ${result.correct}/${result.total}. Erros viraram cartões de revisão.`);
-  };
+function GuidedContent({ activity, data, update, showNotice, currentDayNumber }: { activity: PlannedActivity; data: AppData; update: Props['update']; showNotice: Props['showNotice']; currentDayNumber: number }) {
+  const [reveal, setReveal] = useState(false);
+  const [revealedWords, setRevealedWords] = useState<string[]>([]);
+  const content = resolveContent(activity);
+  const output = data.dayOutputs?.[activity.key] || '';
+  const setOutput = (value: string) => update((current) => ({ ...current, dayOutputs: { ...(current.dayOutputs || {}), [activity.key]: value } }));
+  const complete = (notes = '') => update((current) => finishActivity(current, activity, currentDayNumber, notes));
+  const input = activity.kind === 'input' ? verifiedResources.find((item) => item.id === activity.contentId) : undefined;
+  const scenario = activity.kind === 'speaking' ? conversationScenarios.find((item) => item.id === activity.contentId) : undefined;
+  const module = activity.kind === 'vocabulary' || activity.kind === 'startup' ? startupModules.find((item) => item.id === activity.contentId) : undefined;
+  const difficulty = data.activityDifficulty?.[activity.key];
+  const due = data.cards.filter((card) => card.dueDate <= todayISO());
+  const setDifficulty = (value: 'easy' | 'hard') => update((current) => ({ ...current, activityDifficulty: { ...(current.activityDifficulty || {}), [activity.key]: value } }));
   const questions = activity.quizQuestions || [];
-  return <article className={`task-item daily-activity ${completed ? 'task-complete' : ''} ${isOverdue ? 'activity-overdue' : ''}`}>
-    <button className={`task-check ${completed || waived ? 'checked' : ''}`} aria-label={completed ? `Desmarcar ${activity.title}` : `Marcar ${activity.title} como concluída`} onClick={toggle}>{completed ? '✓' : waived ? '–' : null}</button>
-    <div className="task-body"><div className="task-title-row"><span className="task-number">{String(activity.index + 1).padStart(2, '0')}</span><h3>{activity.title}</h3></div>
-      {isOverdue && <span className="status-badge status-overdue">Pendência do dia {activity.day}</span>}{waived && <span className="status-badge status-skipped">Dispensada com evidência</span>}
-      <dl className="activity-guidance"><div><dt>Objetivo</dt><dd>{activity.objective}</dd></div><div><dt>Instruções</dt><dd>{activity.instructions}</dd></div><div><dt>Material</dt><dd>{activity.material}</dd></div><div><dt>Exercício</dt><dd>{activity.exercise}</dd></div><div><dt>Critério</dt><dd>{activity.criteria}</dd></div></dl>
-      {activity.kind === 'input' && activity.resourceId && (() => { const progress = data.inputProgress?.[activity.resourceId] || { watched: false, understood: false, repeat: false, updatedAt: '' }; return <div className="resource-progress"><label><input type="checkbox" checked={progress.watched} onChange={(event) => toggleInputProgress('watched', event.target.checked)} /> Assisti</label><label><input type="checkbox" checked={progress.understood} onChange={(event) => toggleInputProgress('understood', event.target.checked)} /> Compreendi</label><label><input type="checkbox" checked={progress.repeat} onChange={(event) => toggleInputProgress('repeat', event.target.checked)} /> Preciso repetir</label></div>; })()}
-      {activity.kind === 'writing' && <label className="field-label" htmlFor={`writing-${activity.key}`}>Seu texto (salvo automaticamente)<textarea id={`writing-${activity.key}`} value={data.dayOutputs?.[activity.key] || ''} onChange={(event) => update((current) => ({ ...current, dayOutputs: { ...(current.dayOutputs || {}), [activity.key]: event.target.value } }))} placeholder="Escreva suas frases em inglês aqui…" rows={3} /></label>}
-      {activity.kind === 'quiz' && <div className="diagnostic-questions daily-quiz">{questions.map((question, index) => <fieldset key={question.id} disabled={Boolean(quizResult)}><legend>{index + 1}. {question.prompt}</legend>{question.options.map((option, optionIndex) => <label key={option}><input type="radio" name={`quiz-${activity.key}-${index}`} checked={answers[index] === optionIndex} onChange={() => setAnswers((old) => { const next = [...old]; next[index] = optionIndex; return next; })} /> {option}</label>)}{quizResult && <small className={quizResult.explanations[index].correct ? 'quiz-correct' : 'quiz-incorrect'}>{quizResult.explanations[index].correct ? 'Correto. ' : 'Revisar. '}{quizResult.explanations[index].explanation}</small>}</fieldset>)}<button type="button" className="button secondary" disabled={Boolean(quizResult) || questions.some((_, index) => !Number.isInteger(answers[index]))} onClick={submitQuiz}>{quizResult ? `Corrigido: ${quizResult.correct}/${quizResult.total}` : 'Corrigir teste e salvar resultado'}</button>{quizResult && <button type="button" className="button quiet" onClick={() => { setAnswers([]); setQuizResult(null); }}>Refazer teste</button>}</div>}
-      {activity.url && <a href={activity.url} target="_blank" rel="noopener noreferrer">Abrir material <span aria-hidden="true">→</span></a>}
-      {record?.completedAt && <small className="subtle">Concluída em {new Date(record.completedAt).toLocaleString('pt-BR')} {isOverdue ? '(após o dia planejado)' : ''}</small>}
-      {!completed && !waived && activity.kind !== 'quiz' && <button className="waive-button" onClick={waive}>Dispensar após avaliação…</button>}
-    </div><span className="task-minutes">{activity.minutes} min</span>
-  </article>;
+  const answers = data.quizDrafts?.[activity.key] || [];
+  const renderOutput = (label: string, placeholder: string, rows = 3) => <label className="field-label" htmlFor={`guided-output-${activity.key}`}>{label}<textarea id={`guided-output-${activity.key}`} value={output} onChange={(event) => setOutput(event.target.value)} placeholder={placeholder} rows={rows} /></label>;
+  const sentenceCount = output.split(/[.!?]+/).filter((part) => part.trim().length > 1).length;
+  const course = activity.kind === 'udemy' ? getDailyCoursePlan(activity.day, data, allocateMinutes(dailyTarget(days[activity.day - 1], data))[0]) : undefined;
+  return <div className="guided-content" data-content-id={activity.contentId}>
+    {content === undefined && <p role="alert" className="guided-warning">Conteúdo específico não encontrado para o ID {activity.contentId}. Esta etapa precisa de correção antes de ser concluída.</p>}
+    {content !== undefined && activity.kind === 'udemy' && <><p>As aulas e testes específicos estão na fila Udemy logo abaixo. Marque cada item lá depois de fazê-lo. Confirme este bloco quando terminar.</p><ul className="guided-compact-list">{course?.lessons.map((lecture) => <li key={lecture.id}>{lecture.sequence}. {lecture.title} · {lecture.durationMinutes} min {lectureIsComplete(lecture, data) ? '✓' : ''}</li>)}</ul><a href={activity.url!} target="_blank" rel="noopener noreferrer" className="button secondary">Abrir curso na Udemy ↗</a><button className="button primary guided-main-button" onClick={() => complete('Bloco Udemy confirmado pelo usuário; aulas têm status separado.')}>Concluí o bloco da Udemy</button></>}
+    {content !== undefined && input && <><p>{input.source} · {input.level} · {activity.minutes} min</p><p>{activity.instructions}</p><a className="button secondary" href={input.url} target="_blank" rel="noopener noreferrer">Abrir lição específica ↗</a>{!isTrustedResourceUrl(input.url) && <p role="alert">Link requer revisão.</p>}<div className="resource-progress">{(['watched', 'understood', 'repeat'] as const).map((field) => <label key={field}><input type="checkbox" checked={data.inputProgress?.[input.id]?.[field] || false} onChange={(event) => update((current) => ({ ...current, inputProgress: { ...(current.inputProgress || {}), [input.id]: { ...(current.inputProgress?.[input.id] || { watched: false, understood: false, repeat: false }), [field]: event.target.checked, updatedAt: new Date().toISOString() } } }))} /> {field === 'watched' ? 'Assisti' : field === 'understood' ? 'Entendi' : 'Preciso repetir'}</label>)}</div>{renderOutput('Verificação: o que você compreendeu?', 'Anote a ideia principal ou uma frase que reconheceu.') }<button className="button primary guided-main-button" disabled={!data.inputProgress?.[input.id]?.watched || !output.trim() || !isTrustedResourceUrl(input.url)} onClick={() => complete(output)}>Salvar Input e concluir</button></>}
+    {content !== undefined && scenario && <><p>{scenario.level} · {activity.minutes} min · {scenario.prompt}</p><div className="guided-phrase-list">{scenario.phrases.map((phrase) => <span key={phrase}>{phrase}</span>)}</div><p><b>Objetivo:</b> {scenario.goal}</p><div className="guided-actions"><button className="button secondary" onClick={() => { if (!navigator.clipboard?.writeText) { showNotice('Copie o roteiro diretamente da tela.'); return; } void navigator.clipboard.writeText(chatGPTVoicePrompt(scenario)).then(() => showNotice('Roteiro copiado.')).catch(() => showNotice('Não foi possível copiar. Selecione o roteiro na tela.')); }}>Copiar roteiro</button><a className="button secondary" href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Abrir ChatGPT Voice ↗</a></div>{renderOutput('Que frase você disse? Onde teve dificuldade?', 'Ex.: My name is...; precisei repetir a pergunta.') }<DifficultyChoice value={difficulty} onChange={setDifficulty} /><button className="button primary guided-main-button" disabled={!output.trim() || !difficulty} onClick={() => update((current) => { if (current.activities[activity.key]?.status === 'done') return current; const next = finishActivity(current, activity, currentDayNumber, output); return { ...next, speaking: [{ date: new Date().toISOString(), topic: scenario.title, minutes: activity.minutes, notes: output }, ...next.speaking] }; })}>Salvar prática e concluir</button></>}
+    {content !== undefined && activity.kind === 'review' && <>{due.length ? <><p>{due.length} cartão(ões) para revisar hoje. Tente lembrar antes de revelar.</p><div className="guided-flashcard"><h4>{due[0].phrase}</h4>{reveal && <p>{due[0].meaning}<br />{due[0].example}</p>}<button className="button secondary" onClick={() => setReveal(!reveal)}>{reveal ? 'Ocultar resposta' : 'Revelar resposta'}</button>{reveal && <div className="guided-grade-grid">{([['wrong', 'Errei'], ['hard', 'Difícil'], ['good', 'Acertei'], ['easy', 'Fácil']] as const).map(([grade, label]) => <button key={grade} className="button secondary" onClick={() => { update((current) => gradeCard(current, due[0].id, grade)); setReveal(false); }}>{label}</button>)}</div>}</div></> : <p>Nenhum cartão pendente nesta sessão. Você pode finalizar a revisão.</p>}<button className="button primary guided-main-button" disabled={due.length > 0} onClick={() => complete('Fila de revisão vencida processada ou vazia.')}>Concluir revisão</button></>}
+    {content !== undefined && activity.kind === 'writing' && <><p>{activity.exercise}</p><p>Modelos: {activity.material}</p>{renderOutput('Sua resposta (rascunho salvo automaticamente)', 'Escreva 2 a 4 frases em inglês.', 5)}<p className="guided-feedback">{sentenceCount} frase(s) detectada(s). Confira sujeito, verbo e clareza. A gramática não é corrigida automaticamente.</p><button className="button primary guided-main-button" disabled={sentenceCount < 2} onClick={() => complete(output)}>Salvar texto e concluir</button></>}
+    {content !== undefined && activity.kind === 'vocabulary' && module && <><p>Tente lembrar antes de revelar. Depois marque sua dificuldade.</p><div className="guided-words">{module.words.slice(0, 4).map((word) => { const key = `${activity.key}:${word.english}`; const example = vocabularyExample(module, word.english); return <div className="guided-word" key={word.english}><b>{word.english}</b>{revealedWords.includes(word.english) ? <span>{word.portuguese} · {example}</span> : <button className="button secondary" onClick={() => setRevealedWords([...revealedWords, word.english])}>Mostrar significado</button>}<div className="guided-actions"><button className="button secondary" onClick={() => update((current) => gradeVocabulary(current, activity, word, 'hard', example))}>Difícil</button><button className="button secondary" onClick={() => update((current) => gradeVocabulary(current, activity, word, 'good', example))}>Lembrei</button></div>{data.vocabularyProgress?.[key] && <small>Registrado · revisão programada</small>}</div>; })}</div><fieldset className="guided-recognition"><legend>Reconhecimento: “{module.words[0].english}” significa…</legend>{module.words.slice(0, 4).map((word, index) => <label key={word.english}><input type="radio" name={`vocab-${activity.key}`} checked={data.quizDrafts?.[`${activity.key}:recognition`]?.[0] === index} onChange={() => update((current) => ({ ...current, quizDrafts: { ...(current.quizDrafts || {}), [`${activity.key}:recognition`]: [index] } }))} /> {word.portuguese}</label>)}{data.quizDrafts?.[`${activity.key}:recognition`]?.length ? <small>{data.quizDrafts[`${activity.key}:recognition`][0] === 0 ? 'Correto.' : `Revise: ${module.words[0].portuguese}.`}</small> : null}</fieldset><button className="button primary guided-main-button" disabled={!data.quizDrafts?.[`${activity.key}:recognition`]?.length || module.words.slice(0, 4).filter((word) => data.vocabularyProgress?.[`${activity.key}:${word.english}`]).length < 2} onClick={() => complete('Reconhecimento feito e pelo menos duas expressões classificadas para revisão.')}>Concluir vocabulário</button></>}
+    {content !== undefined && activity.kind === 'quiz' && <><p>{activity.day % 28 === 0 || activity.day === 182 ? 'Avaliação do período' : 'Verificação rápida'} · {questions.length} questões</p><div className="diagnostic-questions daily-quiz">{questions.map((question, index) => <fieldset key={question.id}><legend>{index + 1}. {question.prompt}</legend>{question.options.map((option, optionIndex) => <label key={option}><input type="radio" name={`quiz-${activity.key}-${index}`} checked={answers[index] === optionIndex} onChange={() => update((current) => { const draft = [...(current.quizDrafts?.[activity.key] || [])]; draft[index] = optionIndex; return { ...current, quizDrafts: { ...(current.quizDrafts || {}), [activity.key]: draft }, quizQuestionIds: { ...(current.quizQuestionIds || {}), [activity.key]: current.quizQuestionIds?.[activity.key] || questions.map((item) => item.id) } }; })} /> {option}</label>)}</fieldset>)}</div><p>{answers.filter(Number.isInteger).length} de {questions.length} respondidas</p><button className="button primary guided-main-button" disabled={answers.filter(Number.isInteger).length !== questions.length} onClick={() => { try { update((current) => submitDailyQuiz(current, activity, currentDayNumber)); showNotice('Avaliação salva; erros entraram na revisão.'); } catch (error) { showNotice(error instanceof Error ? error.message : 'Responda todas as questões.'); } }}>Corrigir teste e salvar resultado</button></>}
+    {content !== undefined && activity.kind === 'startup' && module && <><p>{module.level} · {module.goal}</p><div className="guided-phrase-list">{module.phrases.map((phrase) => <span key={phrase}>{phrase}</span>)}</div><p>{module.activity}</p>{renderOutput('Sua frase ou resposta', 'Use uma frase sua; deixe números em branco se não foram verificados.') }<button className="button primary guided-main-button" disabled={!output.trim()} onClick={() => complete(output)}>Salvar Startup English e concluir</button></>}
+    {activity.kind !== 'quiz' && <details className="guided-more"><summary>Ver exercício e critérios</summary><p><b>Exercício:</b> {activity.exercise}</p><p><b>Critério:</b> {activity.criteria}</p></details>}
+  </div>;
+}
+
+function DifficultyChoice({ value, onChange }: { value?: 'easy' | 'hard'; onChange: (value: 'easy' | 'hard') => void }) { return <fieldset className="guided-difficulty"><legend>Como foi a prática?</legend><label><input type="radio" name="guided-difficulty" checked={value === 'easy'} onChange={() => onChange('easy')} /> Consegui falar</label><label><input type="radio" name="guided-difficulty" checked={value === 'hard'} onChange={() => onChange('hard')} /> Tive dificuldade</label></fieldset>; }
+
+function QuizResult({ activity, data }: { activity: PlannedActivity; data: AppData }) {
+  const answers = data.quizDrafts?.[activity.key];
+  if (!answers || !activity.quizQuestions?.length) return null;
+  try {
+    const result = scoreQuiz(activity.quizQuestions, answers);
+    return <div className="guided-quiz-result"><b>Resultado: {result.correct} de {result.total}</b>{result.explanations.map((item, index) => <p key={item.questionId}><strong>{index + 1}. {item.correct ? 'Correto' : 'Revise'}</strong> · {item.answer}. {item.explanation}</p>)}</div>;
+  } catch { return null; }
 }
