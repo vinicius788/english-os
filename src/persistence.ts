@@ -1,5 +1,5 @@
 import type { AppData } from './domain';
-import { defaultData, importUdemyCatalog, mergeProgress, bundledCatalog } from './domain';
+import { defaultData, importUdemyCatalog, mergeProgress, bundledCatalog, seed, todayISO } from './domain';
 
 const KEY = 'english-os:v1';
 const DB = 'english-os';
@@ -11,10 +11,27 @@ function restoreData(value: AppData): AppData {
   const restored = mergeProgress(value, defaultData());
   // Upgrade older local snapshots once. Re-importing the bundled catalog on every
   // load would overwrite metadata from a later, user-authorized CSV/JSON import.
-  return restored.catalogImport?.importedLessonCount === bundledCatalog.lessons.length
+  const catalog = restored.catalogImport?.importedLessonCount === bundledCatalog.lessons.length
     && restored.catalogImport?.importedTestCount === bundledCatalog.tests.length
     ? restored
     : importUdemyCatalog(restored, bundledCatalog);
+  return startWhenReady(catalog);
+}
+
+function startWhenReady(data: AppData): AppData {
+  if (data.settings.startDate !== seed.metadata.start_date || todayISO() <= data.settings.startDate) return data;
+  const hasProgress = Object.values(data.activities).some((item) => item.status !== 'todo')
+    || Object.values(data.dayNotes).some((value) => Boolean(value.trim()))
+    || Object.values(data.dayOutputs || {}).some((value) => Boolean(value.trim()))
+    || data.watched.length > 0 || data.lectures.some((item) => item.status === 'watched')
+    || (data.courseTests || []).some((item) => item.status === 'completed')
+    || data.cards.length > 0 || data.assessments.length > 0 || data.speaking.length > 0
+    || Object.keys(data.inputProgress || {}).length > 0 || Object.keys(data.overrides).length > 0
+    || (data.skillAttempts || []).length > 0 || (data.tutorSessions || []).length > 0
+    || Object.keys(data.quizDrafts || {}).length > 0 || Object.keys(data.vocabularyProgress || {}).length > 0
+    || Object.values(data.startupMetrics || {}).some((value) => Boolean(value.trim()))
+    || (data.catalogImport?.source && data.catalogImport.source !== bundledCatalog.metadata.source);
+  return hasProgress ? data : { ...data, settings: { ...data.settings, startDate: todayISO() }, studySession: undefined };
 }
 
 function openDb(): Promise<IDBDatabase> {
@@ -43,7 +60,7 @@ export async function loadData(): Promise<AppData> {
   try { const value = localStorage.getItem(KEY); local = value ? JSON.parse(value) as AppData : undefined; } catch { /* IndexedDB copy remains available */ }
   const freshest = local?.version === 1 && (local.savedAt || 0) > (stored?.savedAt || 0) ? local : stored?.version === 1 ? stored : local?.version === 1 ? local : undefined;
   lastSaveStamp = Math.max(lastSaveStamp, freshest?.savedAt || 0);
-  return freshest ? restoreData(freshest) : defaultData();
+  return freshest ? restoreData(freshest) : startWhenReady(defaultData());
 }
 
 export async function saveData(data: AppData): Promise<void> {

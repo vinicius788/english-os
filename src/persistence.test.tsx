@@ -4,11 +4,29 @@ import userEvent from '@testing-library/user-event';
 import { BrowserRouter, MemoryRouter } from 'react-router-dom';
 import App from './ui/App';
 import { clearData, loadData, mergeBackupData, saveData } from './persistence';
-import { defaultData } from './domain';
+import { defaultData, seed, todayISO } from './domain';
 
 afterEach(async () => { cleanup(); await clearData(); });
 
 describe('local persistence', () => {
+  it('starts an untouched profile at day 1 on the first actual use', async () => {
+    const pristine = defaultData();
+    pristine.studySession = { day: 13, activityKey: '13:0', open: true };
+    await saveData(pristine);
+    const started = await loadData();
+    expect(started.settings.startDate).toBe(todayISO());
+    expect(started.studySession).toBeUndefined();
+    expect(started.lectures).toHaveLength(545);
+    expect(started.courseTests).toHaveLength(24);
+  });
+
+  it('keeps the original schedule when real study progress exists', async () => {
+    const data = defaultData();
+    data.activities['1:1'] = { status: 'done', updatedAt: new Date().toISOString() };
+    await saveData(data);
+    expect((await loadData()).settings.startDate).toBe(seed.metadata.start_date);
+  });
+
   it('imports a backup without replacing newer local progress and restores the exported course snapshot', () => {
     const current = defaultData();
     current.settings.targetMinutes = 90;
