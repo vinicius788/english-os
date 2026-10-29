@@ -4,20 +4,28 @@ import userEvent from '@testing-library/user-event';
 import { BrowserRouter, MemoryRouter } from 'react-router-dom';
 import App from './ui/App';
 import { clearData, loadData, mergeBackupData, saveData } from './persistence';
-import { defaultData, seed, todayISO } from './domain';
+import { defaultData, seed } from './domain';
 
 afterEach(async () => { cleanup(); await clearData(); });
 
 describe('local persistence', () => {
-  it('starts an untouched profile at day 1 on the first actual use', async () => {
+  it('starts an untouched profile on Monday 2 November, including a stale open session', async () => {
     const pristine = defaultData();
+    pristine.settings.startDate = '2026-10-26';
     pristine.studySession = { day: 13, activityKey: '13:0', open: true };
     await saveData(pristine);
     const started = await loadData();
-    expect(started.settings.startDate).toBe(todayISO());
+    expect(started.settings.startDate).toBe('2026-11-02');
     expect(started.studySession).toBeUndefined();
     expect(started.lectures).toHaveLength(545);
     expect(started.courseTests).toHaveLength(24);
+  });
+
+  it('preserves a chosen future start date', async () => {
+    const data = defaultData();
+    data.settings.startDate = '2026-11-09';
+    await saveData(data);
+    expect((await loadData()).settings.startDate).toBe('2026-11-09');
   });
 
   it('keeps the original schedule when real study progress exists', async () => {

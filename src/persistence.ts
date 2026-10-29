@@ -1,9 +1,10 @@
 import type { AppData } from './domain';
-import { defaultData, importUdemyCatalog, mergeProgress, bundledCatalog, seed, todayISO } from './domain';
+import { defaultData, importUdemyCatalog, mergeProgress, bundledCatalog } from './domain';
 
 const KEY = 'english-os:v1';
 const DB = 'english-os';
 const STORE = 'app';
+const START_DATE = '2026-11-02';
 let lastSaveStamp = 0;
 let pendingWrite: Promise<void> = Promise.resolve();
 
@@ -19,7 +20,7 @@ function restoreData(value: AppData): AppData {
 }
 
 function startWhenReady(data: AppData): AppData {
-  if (data.settings.startDate !== seed.metadata.start_date || todayISO() <= data.settings.startDate) return data;
+  if (data.settings.startDate >= START_DATE) return data;
   const hasProgress = Object.values(data.activities).some((item) => item.status !== 'todo')
     || Object.values(data.dayNotes).some((value) => Boolean(value.trim()))
     || Object.values(data.dayOutputs || {}).some((value) => Boolean(value.trim()))
@@ -31,7 +32,7 @@ function startWhenReady(data: AppData): AppData {
     || Object.keys(data.quizDrafts || {}).length > 0 || Object.keys(data.vocabularyProgress || {}).length > 0
     || Object.values(data.startupMetrics || {}).some((value) => Boolean(value.trim()))
     || (data.catalogImport?.source && data.catalogImport.source !== bundledCatalog.metadata.source);
-  return hasProgress ? data : { ...data, settings: { ...data.settings, startDate: todayISO() }, studySession: undefined };
+  return hasProgress ? data : { ...data, settings: { ...data.settings, startDate: START_DATE }, studySession: undefined };
 }
 
 function openDb(): Promise<IDBDatabase> {
